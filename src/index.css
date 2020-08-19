@@ -467,6 +467,10 @@ legend {
     width: 100%;
     font-size: 0.9em;
   }
+  section article ul:nth-child(1) span {
+    width: 100%;
+    font-size: 0.7em;
+  }
   section article ul:nth-child(2) {
     overflow-x: auto;
     padding: 0 20px;
