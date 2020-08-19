@@ -68,7 +68,7 @@ nav {
   background: #fefeff 0% 0% no-repeat padding-box;
   padding: 40px 20px;
   border: 1px solid #ececec;
-  opacity: 0.5;
+  opacity: 1;
 }
 nav ul {
   min-height: 40%;
