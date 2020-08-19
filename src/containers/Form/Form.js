@@ -8,16 +8,16 @@ function Form(props) {
           <h4>New gig</h4>
         </header>
         <div>
-          <div class="card card_small">
+          <div className="card card_small">
             <header>Basic Data</header>
             <p>Documentation</p>
           </div>
-          <div class="card card_large">
+          <div className="card card_large">
             <form action="">
               <fieldset>
-                <label for="role"> Role</label>
+                <label htmlFor="role"> Role</label>
                 <input type="text" name="role" id="role" placeholder="role" />
-                <label for="company"> company</label>
+                <label htmlFor="company"> company</label>
 
                 <input
                   type="text"
@@ -48,13 +48,13 @@ function Form(props) {
                 <legend>Add tags</legend>
                 <input
                   type="text"
-                  value="html,input,tag"
+                  // value={'html,input,tag'}
                   data-role="tagsinput"
                 ></input>
               </fieldset>
-              <div class="btn_buttons">
-                <button class="btn btn_primary">Back</button>
-                <button class="btn btn_secondary">Add gig</button>
+              <div className="btn_buttons">
+                <button className="btn btn_primary">Back</button>
+                <button className="btn btn_secondary">Add gig</button>
               </div>
             </form>
           </div>

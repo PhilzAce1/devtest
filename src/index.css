@@ -423,3 +423,61 @@ legend {
 .tag.label.label-info {
   color: #e18802;
 }
+
+@media (max-width: 600px) {
+  main {
+    width: 100vw;
+  }
+  main > section,
+  main > section article {
+    width: 100%;
+    padding: 0 10px;
+  }
+  nav {
+    display: none;
+  }
+  header > div {
+    padding: 0;
+  }
+  table {
+    padding: 0;
+  }
+  header > div {
+    padding: 0px 10px;
+  }
+  header > div > div:nth-child(2) {
+    width: 60%;
+  }
+  .tab_header {
+    padding: 0 20px;
+  }
+  .tab_header header > div > div:nth-child(2) {
+    width: 75%;
+  }
+  .tab_header li {
+    padding-bottom: 20px;
+  }
+  .tab_header li:first-child {
+    border-bottom: 2px solid #fbb30b;
+    padding-bottom: 15px;
+    padding-right: 0;
+  }
+  section article ul:nth-child(1) {
+    width: 100%;
+  }
+  section article ul:nth-child(2) {
+    overflow-x: auto;
+    padding: 0 20px;
+    padding-left: 100px;
+    width: 100vw;
+  }
+  section article ul:nth-child(2) > li {
+    margin: 0px 20px;
+  }
+  section article ul:nth-child(1) {
+    padding: 0;
+  }
+  .top_header {
+    background: yellow;
+  }
+}
