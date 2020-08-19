@@ -1,41 +1,11 @@
 import React from 'react';
+import Button from './components/Button';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <main>
-      <nav>
-        <ul>
-          <li>
-            <img src={require('./assets/img/logo.svg')} alt="logo" />
-          </li>
-          <li>
-            <img src={require('./assets/img/Icon-home-fill.svg')} alt="home" />{' '}
-            Dashboard
-          </li>
-          <li>
-            <img
-              src={require('./assets/img/Icon-briefcase-fill.svg')}
-              alt="gig"
-            />
-            Gigs
-          </li>
-          <li>
-            <img
-              src={require('./assets/img/Icon-npm-fill.svg')}
-              alt="company nav"
-            />
-            Company
-          </li>
-
-          <li>
-            <img
-              src={require('./assets/img/Icon-person-fill.svg')}
-              alt="person"
-            />
-            Account
-          </li>
-        </ul>
-      </nav>
+      <Nav />
       <section>
         <header>
           <div>
@@ -76,9 +46,9 @@ function App() {
           </div>
           <div>
             <h3>Gigs</h3>
-            <button className="btn btn_secondary">
+            <Button type="secondary">
               New gig <i className="fas fa-plus"></i>
-            </button>
+            </Button>
           </div>
         </header>
         <article>
@@ -95,49 +65,49 @@ function App() {
           </ul>
           <ul>
             <li>
-              <button className="btn btn_primary">Freelance</button>
+              <Button type="primary">Freelance</Button>
             </li>
             <li>
-              <button className="btn btn_primary">
+              <Button type="primary">
                 <img src="./img/Icon-move.svg" alt="" /> Keywords
-              </button>
+              </Button>
             </li>
             <li>
-              <button className="btn btn_primary">
+              <Button type="primary">
                 <img
                   src={require('./assets/img/Icon-pin.svg')}
                   alt="button icon"
                 />
                 Location
-              </button>
+              </Button>
             </li>
             <li>
-              <button className="btn btn_primary">
+              <Button type="primary">
                 <img
                   src={require('./assets/img/Icon-globe.svg')}
                   alt="remote friendly Icon"
                 />
                 Remote Friendly
-              </button>
+              </Button>
             </li>
             <li>
-              <button className="btn btn_primary selected">
+              <Button type="primary" selected={true}>
                 <img
                   src={require('./assets/img/Icon-color-palette .svg')}
                   alt="color-pallet icon"
                 />
                 Design
                 <i className="fas fa-check"></i>
-              </button>
+              </Button>
             </li>
             <li>
-              <button className="btn btn_primary">
+              <Button type="primary">
                 <img
                   src={require('./assets/img/Icon-npm-fill.svg')}
                   alt="icon-npm-fill"
                 />
                 Contract
-              </button>
+              </Button>
             </li>
           </ul>
           <table>
@@ -166,7 +136,7 @@ function App() {
                 <td>20th, June 2020</td>
                 <td>20,000-30,000</td>
                 <td>
-                  <button>Delete</button>
+                  <Button>Delete</Button>
                 </td>
               </tr>
               <tr>
@@ -178,7 +148,7 @@ function App() {
                 <td>20th, June 2020</td>
                 <td>20,000-30,000</td>
                 <td>
-                  <button>Delete</button>
+                  <Button>Delete</Button>
                 </td>
               </tr>
               <tr>
@@ -190,7 +160,7 @@ function App() {
                 <td>20th, June 2020</td>
                 <td>20,000-30,000</td>
                 <td>
-                  <button>Delete</button>
+                  <Button>Delete</Button>
                 </td>
               </tr>
               <tr>
@@ -202,7 +172,7 @@ function App() {
                 <td>20th, June 2020</td>
                 <td>20,000-30,000</td>
                 <td>
-                  <button>Delete</button>
+                  <Button>Delete</Button>
                 </td>
               </tr>
             </tbody>
